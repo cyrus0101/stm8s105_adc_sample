@@ -1,0 +1,5 @@
+stm8s_adc2.pbi: \
+  D:\program\venus_stm8\venus_protect_stm8\lib\src\stm8s_adc2.c \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_adc2.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc/stm8s.h \
+  D:\IAR_STM8\stm8\inc\c\intrinsics.h
