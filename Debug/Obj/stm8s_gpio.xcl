@@ -14,6 +14,10 @@ D:\program\venus_stm8\venus_protect_stm8\lib\inc
 -I
 D:\program\venus_stm8\venus_protect_stm8\lib\src
 -I
+D:\program\venus_stm8\venus_protect_stm8
+-I
+D:\program\venus_stm8\venus_protect_stm8\BSP
+-I
 D:\IAR_STM8\stm8\inc
 -I
 D:\IAR_STM8\stm8\inc\c
@@ -21,6 +25,10 @@ D:\IAR_STM8\stm8\inc\c
 D:\program\venus_stm8\venus_protect_stm8\lib\inc
 -I
 D:\program\venus_stm8\venus_protect_stm8\lib\src
+-I
+D:\program\venus_stm8\venus_protect_stm8
+-I
+D:\program\venus_stm8\venus_protect_stm8\BSP
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

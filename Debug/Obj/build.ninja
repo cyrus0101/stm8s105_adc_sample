@@ -20,15 +20,22 @@ rule browsedata
 
 
 #Build steps
+build bsp_ADC.pbi : index bsp_ADC.xcl
+build bsp_task.pbi : index bsp_task.xcl
+build bsp_time2.pbi : index bsp_time2.xcl
 build bsp_uart2.pbi : index bsp_uart2.xcl
+build stm8s_itc.pbi : index stm8s_itc.xcl
 build stm8s_adc1.pbi : index stm8s_adc1.xcl
 build stm8s_clk.pbi : index stm8s_clk.xcl
+build stm8s_gpio.pbi : index stm8s_gpio.xcl
+build stm8s_tim2.pbi : index stm8s_tim2.xcl
 build stm8s_uart2.pbi : index stm8s_uart2.xcl
 build main.pbi : index main.xcl
-build stm8s105k4t_part0.pbi : link bsp_uart2.pbi stm8s_adc1.pbi
-build stm8s105k4t_part1.pbi : link stm8s_clk.pbi stm8s_uart2.pbi
-build stm8s105k4t_part2.pbi : link main.pbi
-build stm8s105k4t.pbd : link stm8s105k4t_part0.pbi stm8s105k4t_part1.pbi stm8s105k4t_part2.pbi
+build stm8s105k4t_part0.pbi : link bsp_ADC.pbi bsp_task.pbi bsp_time2.pbi
+build stm8s105k4t_part1.pbi : link bsp_uart2.pbi stm8s_itc.pbi stm8s_adc1.pbi
+build stm8s105k4t_part2.pbi : link stm8s_clk.pbi stm8s_gpio.pbi stm8s_tim2.pbi
+build stm8s105k4t_part3.pbi : link stm8s_uart2.pbi main.pbi
+build stm8s105k4t.pbd : link stm8s105k4t_part0.pbi stm8s105k4t_part1.pbi stm8s105k4t_part2.pbi stm8s105k4t_part3.pbi
 build stm8s105k4t.pbw : browsedata stm8s105k4t.pbd
 
 

@@ -3,7 +3,7 @@
 #include "stdio.h"
 void uart2_init(void);
 
-#if defined(UART2_DEBUG)&&(UART2_DEBUG == ENABLE)
+#if defined(UART2_DEBUG)&&(UART2_DEBUG == ON)
 //#define printf_debug(_mod_name_, _fmt_, ...)    printf("[%s] " _fmt_ "\r\n", _mod_name_, ##__VA_ARGS__)
 #define printf_debug(fmt, args...)    printf(fmt, ##args)
 #else 

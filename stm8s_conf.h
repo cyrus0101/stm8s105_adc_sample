@@ -41,30 +41,30 @@
     defined (STM8AF62Ax)
  #include "stm8s_adc2.h"
 #endif /* (STM8S208) || (STM8S207) || (STM8AF62Ax) || (STM8AF52Ax) */
-#include "stm8s_awu.h"
-#include "stm8s_beep.h"
+//#include "stm8s_awu.h"
+//#include "stm8s_beep.h"
 #if defined (STM8S208) || defined (STM8AF52Ax)
  #include "stm8s_can.h"
 #endif /* STM8S208 || STM8AF52Ax */
 #include "stm8s_clk.h"
-#include "stm8s_exti.h"
+//#include "stm8s_exti.h"
 #include "stm8s_flash.h"
 #include "stm8s_gpio.h"
-#include "stm8s_i2c.h"
+//#include "stm8s_i2c.h"
 #include "stm8s_itc.h"
 #include "stm8s_iwdg.h"
 #include "stm8s_rst.h"
-#include "stm8s_spi.h"
+//#include "stm8s_spi.h"
 #include "stm8s_tim1.h"
 #ifndef STM8S903
  #include "stm8s_tim2.h"
 #endif /* STM8S903 */
 #if defined(STM8S208) || defined(STM8S207) || defined(STM8S007) ||defined(STM8S105) ||\
     defined(STM8S005) ||  defined (STM8AF52Ax) || defined (STM8AF62Ax) || defined (STM8AF626x)
- #include "stm8s_tim3.h"
+ //#include "stm8s_tim3.h"
 #endif /* (STM8S208) ||defined(STM8S207) || defined(STM8S007) ||defined(STM8S105) */ 
 #ifndef STM8S903
- #include "stm8s_tim4.h"
+ //#include "stm8s_tim4.h"
 #endif /* STM8S903 */
 #ifdef STM8S903
  #include "stm8s_tim5.h"
@@ -108,9 +108,13 @@ void assert_failed(uint8_t* file, uint32_t line);
 #endif /* USE_FULL_ASSERT */
 
 /************user confige*****************/
-#define ENABLE         1
-#define DISABLE        0
-#define UART2_DEBUG    ENABLE
+#define  ON         1
+#define  OFF        0
+
+#define  BSP_SUCCESS            0
+#define  BSP_FAIL               1
+#define  BSP_ADC_SAMPLE_WAIT    2
+#define  UART2_DEBUG            ON
 
 #endif /* __STM8S_CONF_H */
 

@@ -1,0 +1,18 @@
+bsp_task.pbi: D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_ADC.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_wwdg.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_uart2.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_tim2.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_tim1.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_rst.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_iwdg.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_itc.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_gpio.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_flash.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_clk.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_adc1.h \
+  D:\IAR_STM8\stm8\inc\c\intrinsics.h \
+  D:\program\venus_stm8\venus_protect_stm8\stm8s_conf.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s.h \
+  D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_time2.h \
+  D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_task.h \
+  D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_task.c

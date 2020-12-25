@@ -1,29 +1,23 @@
-bsp_uart2.pbi: D:\IAR_STM8\stm8\inc\c\ystdio.h \
-  D:\IAR_STM8\stm8\inc\c\ycheck.h D:\IAR_STM8\stm8\inc\c\ysizet.h \
-  D:\IAR_STM8\stm8\inc\c\DLib_Threads.h D:\IAR_STM8\stm8\inc\c\yvals.h \
-  D:\IAR_STM8\stm8\inc\c\xencoding_limits.h \
-  D:\IAR_STM8\stm8\inc\c\DLib_Product.h \
-  D:\IAR_STM8\stm8\inc\c\DLib_Defaults.h D:\IAR_STM8\stm8\inc\c\stdio.h \
-  D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_uart2.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_wwdg.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_uart2.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_tim4.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_tim3.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_tim2.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_tim1.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_spi.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_rst.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_iwdg.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_itc.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_i2c.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_gpio.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_flash.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_exti.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_clk.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_beep.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_awu.h \
-  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_adc1.h \
-  D:\IAR_STM8\stm8\inc\c\intrinsics.h \
+bsp_uart2.pbi: D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_uart2.c \
   D:\program\venus_stm8\venus_protect_stm8\stm8s_conf.h \
   D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s.h \
-  D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_uart2.c
+  D:\IAR_STM8\stm8\inc\c\intrinsics.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_adc1.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc/stm8s.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_clk.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_flash.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_gpio.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_itc.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_iwdg.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_rst.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_tim1.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_tim2.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_uart2.h \
+  D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_wwdg.h \
+  D:\program\venus_stm8\venus_protect_stm8\BSP/bsp_uart2.h \
+  D:\IAR_STM8\stm8\inc\c\stdio.h D:\IAR_STM8\stm8\inc\c\ycheck.h \
+  D:\IAR_STM8\stm8\inc\c\yvals.h D:\IAR_STM8\stm8\inc\c\DLib_Defaults.h \
+  D:\IAR_STM8\stm8\LIB\dlstm8smn.h D:\IAR_STM8\stm8\inc\c\DLib_Product.h \
+  D:\IAR_STM8\stm8\inc\c\xencoding_limits.h \
+  D:\IAR_STM8\stm8\inc\c\DLib_Threads.h D:\IAR_STM8\stm8\inc\c\ysizet.h \
+  D:\IAR_STM8\stm8\inc\c\ystdio.h

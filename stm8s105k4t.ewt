@@ -2156,7 +2156,19 @@
     <group>
         <name>BSP</name>
         <file>
+            <name>$PROJ_DIR$\BSP\bsp_ADC.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\bsp_task.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\BSP\bsp_time2.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\BSP\bsp_uart2.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\src\stm8s_itc.c</name>
         </file>
     </group>
     <group>
@@ -2166,6 +2178,12 @@
         </file>
         <file>
             <name>$PROJ_DIR$\lib\src\stm8s_clk.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\src\stm8s_gpio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\lib\src\stm8s_tim2.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\lib\src\stm8s_uart2.c</name>
