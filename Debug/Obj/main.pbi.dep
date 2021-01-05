@@ -23,4 +23,5 @@ main.pbi: D:\program\venus_stm8\venus_protect_stm8\main.c \
   D:\IAR_STM8\stm8\inc\c\DLib_Threads.h D:\IAR_STM8\stm8\inc\c\ysizet.h \
   D:\IAR_STM8\stm8\inc\c\ystdio.h \
   D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_time2.h \
-  D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_ADC.h
+  D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_ADC.h \
+  D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_task.h

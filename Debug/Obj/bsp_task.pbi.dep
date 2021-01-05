@@ -1,4 +1,11 @@
-bsp_task.pbi: D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_ADC.h \
+bsp_task.pbi: D:\IAR_STM8\stm8\inc\c\ystdio.h \
+  D:\IAR_STM8\stm8\inc\c\ycheck.h D:\IAR_STM8\stm8\inc\c\ysizet.h \
+  D:\IAR_STM8\stm8\inc\c\DLib_Threads.h D:\IAR_STM8\stm8\inc\c\yvals.h \
+  D:\IAR_STM8\stm8\inc\c\xencoding_limits.h \
+  D:\IAR_STM8\stm8\inc\c\DLib_Product.h \
+  D:\IAR_STM8\stm8\inc\c\DLib_Defaults.h D:\IAR_STM8\stm8\inc\c\stdio.h \
+  D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_uart2.h \
+  D:\program\venus_stm8\venus_protect_stm8\BSP\bsp_ADC.h \
   D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_wwdg.h \
   D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_uart2.h \
   D:\program\venus_stm8\venus_protect_stm8\lib\inc\stm8s_tim2.h \

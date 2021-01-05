@@ -49,6 +49,7 @@ INTERRUPT_HANDLER(TIM2_UPD_OVF_BRK_IRQHandler, 13)
   */
   TIM2_sample.timer_cnt++;
   TIM2_sample.time2_it_trigger_flag = 1;
+  TIM2_ClearITPendingBit(TIM2_IT_UPDATE);
 }
 
 /*
@@ -60,7 +61,8 @@ void light_bar_sample_value_timer2_cb(void)
   //bar light on,sample 7 times
   if(TIM2_sample.cnt >= LIGHT_BAR_ON_TIME)
   {
-    _hal_set_low_opt_led_bar_cmd();
+    //设置IR发射口为低
+    //_hal_set_low_opt_led_bar_cmd();
     
     //if sample times >= 10, get the max value,init others params
     if(TIM2_sample.cnt >= SAMPLE_TIME)
@@ -79,7 +81,7 @@ void light_bar_sample_value_timer2_cb(void)
   {
     TIM2_sample.max_adc1_sample_value = ADC_sample_value;
   }
-  printf_debug("the value of ADC_sample_value is %d",ADC_sample_value);
+  //printf_debug("the value of ADC_sample_value is %d",ADC_sample_value);
   TIM2_sample.cnt++;
 
 }

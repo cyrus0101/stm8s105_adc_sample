@@ -1,6 +1,7 @@
 #include "bsp_task.h"
 #include "bsp_time2.h"
 #include "bsp_ADC.h"
+#include "bsp_uart2.h"
 
 //task time define
 #define DELAY_TIMES_1MS       (100U)                  // cannot be 0
@@ -32,6 +33,8 @@ uint32_t task_mark_time_1s = 0;   //test
 uint16_t adc_current_base_value = 0;
 uint8_t     adc_sample_start = 0;
 
+uint16_t pwm_test_cnt = 0;
+
 /*
 * 计算当前ir 接收ADC的基础采样值做参考
 * 被 @10ms_task_mark_time(); 调用
@@ -50,8 +53,9 @@ void adc_current_base_value_calc(void)
 void IR_drv_adc_sample_ctrl(void)
 {
   //打开IR发射管
-  _hal_set_high_opt_led_bar_cmd();
+  //_hal_set_high_opt_led_bar_cmd();
   
+  //_hal_set_low_opt_led_bar_cmd();
   //开始采集数据，将在bsp_ADC.c中被用到
   adc_sample_start = 1;
 }
@@ -138,16 +142,18 @@ uint32_t get_timer_interval(uint32_t old_time)
 /*
 * 10ms任务，10ms执行一次
 */
+
 void timer_10ms_task(void)
 {
   if(get_timer_interval(task_mark_time_10ms) > DELAY_TIMES_10MS)
   {
      task_mark_time_10ms = get_current_time();
-     
+    
      ////////任务区执行区////////
      adc_current_base_value_calc(); 
      lightbar_get_status();
      light_bar_debound_sample();
+     
      ////////任务区执行区////////
   }
 }
@@ -163,6 +169,7 @@ void timer_100ms_task(void)
      
      ////////任务区执行区////////
      IR_drv_adc_sample_ctrl();
+     //
      ////////任务区执行区////////
   }
 }
@@ -177,14 +184,39 @@ void timer_1s_task(void)
      task_mark_time_1s = get_current_time();
      
      ////////任务区执行区////////
-     
+     //uint16_t ad_value = get_adc_value();
+     uint16_t ad_value = get_time2_sample_adc_value();
+     printf_debug("the value of %d",ad_value);
      ////////任务区执行区////////
   }
 }
 
+void real_task_poll()
+{
+      pwm_test_cnt = pwm_test_cnt+1;
+      if(pwm_test_cnt <= 60)
+      {
+        //GPIO_WriteHigh(GPIOC, GPIO_PIN_4);
+        _hal_set_high_opt_led_bar_cmd();
+      }
+      
+      if(pwm_test_cnt > 60)
+      {
+        //GPIO_WriteLow(GPIOC, GPIO_PIN_4);
+        _hal_set_low_opt_led_bar_cmd();
+      }
+      
+      if(pwm_test_cnt > 100)
+      {
+        pwm_test_cnt = 0;
+      }
+}
+
 void time_task_poll(void)
 {
+  handle_adc1_sample_poll();
   current_time = get_current_time();//更新当前时间
+  real_task_poll();
   timer_10ms_task();        //轮询调度
   timer_100ms_task();
   timer_1s_task();
