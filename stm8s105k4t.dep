@@ -250,6 +250,10 @@
             <name>$PROJ_DIR$\BSP\bsp_task.c</name>
             <outputs>
                 <tool>
+                    <name>ICCSTM8</name>
+                    <file> 55</file>
+                </tool>
+                <tool>
                     <name>BICOMP</name>
                     <file> 123</file>
                 </tool>

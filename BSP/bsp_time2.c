@@ -2,7 +2,7 @@
 #include "bsp_ADC.h"
 #include "bsp_uart2.h"
 
-#define    LIGHT_BAR_ON_TIME     7     //7*10 = 70us
+#define    LIGHT_BAR_ON_TIME     7     //PWM高电平比例
 #define    SAMPLE_TIME           10    //tatol sample times
 
 typedef struct {
@@ -124,8 +124,8 @@ uint32_t get_current_time(void)
 void handle_adc1_sample_poll(void)
 {
   //如果中断还未触发，则忽略
-  if(TIM2_sample.time2_it_trigger_flag == 0)  
-    return;
+  //if(TIM2_sample.time2_it_trigger_flag == 0)  
+    //return;
   
   //如果10ms任务调度还没触发，则忽略
    if(adc_sample_start == 0)
@@ -133,5 +133,5 @@ void handle_adc1_sample_poll(void)
    
   light_bar_sample_value_timer2_cb();//handle the value get from adc1 
   
-  TIM2_sample.time2_it_trigger_flag = 0;
+  //TIM2_sample.time2_it_trigger_flag = 0;
 }

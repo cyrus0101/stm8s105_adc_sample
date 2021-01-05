@@ -13,7 +13,7 @@
 //#define MIN_DELTA_DETECTION    (200U)  // 800 / 4 = 200U
 //#define MIN_THREASHOLD         (987U)  //3950 / 4 = 987U  //采样ad的上限值
 #define IR_OPEN_MIN             500      //IR打开，通道无阻碍时AD最小值
-#define IR_CLOSE_MAX            200      //IR关闭，或者通道有阻碍时候的AD最大值
+#define IR_CLOSE_MAX            120      //IR关闭，或者通道有阻碍时候的AD最大值
 
 #define THREASHOLD_RISING       2
 #define THREASHOLD_FALLING      100
@@ -27,6 +27,7 @@ uint8_t light_bar_debound_cnt = 0;
 
 ///////////time task param///////////////
 uint32_t current_time = 0;
+uint32_t task_mark_time_1ms = 0;
 uint32_t task_mark_time_10ms = 0;
 uint32_t task_mark_time_100ms = 0;
 uint32_t task_mark_time_1s = 0;   //test
@@ -75,7 +76,7 @@ void IR_drv_adc_sample_ctrl(void)
 void lightbar_get_status(void)
 {
   uint16_t lightbar_current_ad_value = get_time2_sample_adc_value();
-  printf("%d\r\n", lightbar_current_ad_value);
+  //printf_debug("%d\r\n", lightbar_current_ad_value);
   //开发板AD的量程检测上限为3.3V，目前为高时，都是超量程，所以不做判断20210105
   //if((lightbar_current_ad_value - adc_current_base_value) >= MIN_DELTA_DETECTION) && (lightbar_current_ad_value >= MIN_THREASHOLD))  
   if(lightbar_current_ad_value > IR_OPEN_MIN)
@@ -129,6 +130,7 @@ void light_bar_debound_sample(void)
  */
 void time_cnt_init(void)
 {
+  task_mark_time_1ms = get_current_time();
   task_mark_time_10ms = get_current_time();
   task_mark_time_100ms = get_current_time();
   task_mark_time_1s= get_current_time();
@@ -162,6 +164,18 @@ uint32_t get_timer_interval(uint32_t old_time)
   {
     return (current_time + (0xffffffff - old_time));  
   }
+}
+
+void timer_1ms_task(void)
+{
+    if(get_timer_interval(task_mark_time_1ms) > DELAY_TIMES_1MS)
+  {
+     task_mark_time_1ms = get_current_time();
+
+     handle_adc1_sample_poll();     
+
+  }
+
 }
 
 /*
@@ -211,39 +225,46 @@ void timer_1s_task(void)
      
      ////////任务区执行区////////
      //uint16_t ad_value = get_adc_value();
-     uint16_t ad_value = get_time2_sample_adc_value();
-     //printf_debug("the value of %d",ad_value);
+     //uint16_t ad_value = get_time2_sample_adc_value();
+     //printf_debug("the value is %d\r",ad_value);
      ////////任务区执行区////////
   }
 }
 
-void real_task_poll()
+void real_task_poll(void)
 {
+ /**/
       pwm_test_cnt = pwm_test_cnt+1;
       if(pwm_test_cnt <= 2)
       {
         //GPIO_WriteHigh(GPIOC, GPIO_PIN_4);
-        _hal_set_high_opt_led_bar_cmd();
+       //_hal_set_high_opt_led_bar_cmd();
       }
       
       if(pwm_test_cnt > 2)
       {
         //GPIO_WriteLow(GPIOC, GPIO_PIN_4);
-        _hal_set_low_opt_led_bar_cmd();
+        //_hal_set_low_opt_led_bar_cmd();
       }
       
-      if(pwm_test_cnt > 20)
+      if(pwm_test_cnt > 10)
       {
         pwm_test_cnt = 0;
+        uint16_t ad_value_1 = get_time2_sample_adc_value();
+        printf_debug("%d\r\n",ad_value_1);
       }
+      
+
+      
+
 }
 
 void time_task_poll(void)
 {
-  handle_adc1_sample_poll();
   current_time = get_current_time();//更新当前时间
-  //real_task_poll();        //用于测试的PWM波
-  timer_10ms_task();        //轮询调度
+  real_task_poll();        //用于测试的PWM波
+  timer_1ms_task();
+  timer_10ms_task();         //轮询调度
   timer_100ms_task();
   timer_1s_task();
 }
