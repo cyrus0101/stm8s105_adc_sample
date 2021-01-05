@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V3.11.1.207 for STM8                     04/Jan/2021  16:53:49
+# IAR ELF Linker V3.11.1.207 for STM8                     05/Jan/2021  11:23:01
 # Copyright 2010-2019 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,7 +8,7 @@
 #    Map file     =  
 #        D:\program\venus_stm8\venus_protect_stm8\Debug\List\stm8s105k4t.map
 #    Command line =  
-#        -f C:\Users\¡ı‘∂≥«\AppData\Local\Temp\EW7E84.tmp
+#        -f C:\Users\¡ı‘∂≥«\AppData\Local\Temp\EW14.tmp
 #        (D:\program\venus_stm8\venus_protect_stm8\Debug\Obj\bsp_ADC.o
 #        D:\program\venus_stm8\venus_protect_stm8\Debug\Obj\bsp_task.o
 #        D:\program\venus_stm8\venus_protect_stm8\Debug\Obj\bsp_time2.o
@@ -145,7 +145,7 @@ No sections matched the following patterns:
     .intvec        const    0x008000    0x80  interrupt.o [4]
                           - 0x008080    0x80
 
-"P3-P5":                              0x2b20
+"P3-P5":                              0x2b5a
   .near_func.text  ro code  0x008080   0x460  float.o [4]
   .near_func.text  ro code  0x0084e0   0x45d  xprintffull_nomb.o [4]
   .near_func.text  ro code  0x00893d   0x412  xprintffull_nomb.o [4]
@@ -179,95 +179,98 @@ No sections matched the following patterns:
   .near.rodata     const    0x00a404    0x3e  stm8s_tim2.o [1]
   .near.rodata     const    0x00a442    0x3d  stm8s_clk.o [1]
   .near_func.text  ro code  0x00a47f    0x3d  stm8s_clk.o [1]
-  .near_func.text  const    0x00a4bc    0x3c  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00a4f8    0x3a  bsp_time2.o [1]
-  .near_func.text  ro code  0x00a532    0x38  bsp_task.o [1]
-  .near_func.text  ro code  0x00a56a    0x37  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00a5a1    0x33  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00a5d4    0x31  stm8s_adc1.o [1]
-  .near_func.text  ro code  0x00a605    0x30  bsp_task.o [1]
-  .near_func.text  ro code  0x00a635    0x30  div.o [4]
-  .near_func.text  ro code  0x00a665    0x2f  stm8s_tim2.o [1]
-  .near_func.text  ro code  0x00a694    0x2f  stm8s_tim2.o [1]
-  .near_func.text  ro code  0x00a6c3    0x2f  xprintffull_nomb.o [4]
-  .near.rodata     const    0x00a6f2    0x2e  bsp_uart2.o [1]
-  .near_func.text  ro code  0x00a720    0x2c  dc_util.o [4]
-  .near_func.text  ro code  0x00a74c    0x2b  bsp_time2.o [1]
-  .near_func.text  ro code  0x00a777    0x2a  bsp_task.o [1]
-  .near_func.text  ro code  0x00a7a1    0x29  bsp_ADC.o [1]
-  .near_func.text  ro code  0x00a7ca    0x29  stm8s_uart2.o [1]
-  .near_func.text  ro code  0x00a7f3    0x28  bsp_uart2.o [1]
-  .near_func.text  ro code  0x00a81b    0x28  stm8s_tim2.o [1]
-  .near_func.text  ro code  0x00a843    0x24  bsp_task.o [1]
-  .near_func.text  ro code  0x00a867    0x23  bsp_task.o [1]
-  .near_func.text  ro code  0x00a88a    0x22  bsp_time2.o [1]
-  .near_func.text  ro code  0x00a8ac    0x22  bsp_time2.o [1]
-  .near_func.text  ro code  0x00a8ce    0x21  memchr.o [4]
-  .iar.init_table  const    0x00a8ef     0x8  - Linker created -
-  .near_func.text  ro code  0x00a8f7    0x1f  memcpy.o [4]
-  .near_func.text  ro code  0x00a916    0x1e  init_small.o [4]
-  .near_func.text  ro code  0x00a934    0x1d  bsp_ADC.o [1]
-  .near_func.text  ro code  0x00a951    0x1d  bsp_task.o [1]
-  .near_func.text  ro code  0x00a96e    0x1d  printf.o [4]
-  .near_func.text  ro code  0x00a98b    0x1b  xprout.o [4]
-  .near_func.text  ro code  0x00a9a6    0x19  bsp_uart2.o [1]
-  .near_func.text  ro code  0x00a9bf    0x15  strchr.o [4]
-  .near_func.text  ro code  0x00a9d4    0x14  init.o [4]
-  .near_func.text  ro code  0x00a9e8    0x14  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00a9fc    0x14  __dbg_xxexit.o [3]
-  .near_func.text  ro code  0x00aa10    0x13  cstartup.o [4]
-  .near_func.text  ro code  0x00aa23    0x12  main.o [1]
-  .near.rodata     const    0x00aa35    0x10  bsp_task.o [1]
-  .near.rodata     const    0x00aa45     0xf  bsp_uart2.o [1]
-  .near_func.text  ro code  0x00aa54     0xe  bsp_uart2.o [1]
-  .near_func.text  ro code  0x00aa62     0xd  strlen.o [4]
-  .near_func.text  ro code  0x00aa6f     0xd  move.o [4]
-  .near_func.text  ro code  0x00aa7c     0xc  main.o [1]
-  .near_func.text  ro code  0x00aa88     0xc  stm8s_tim2.o [1]
-  .near_func.text  ro code  0x00aa94     0xc  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00aaa0     0xc  switch.o [4]
-  .near_func.text  ro code  0x00aaac     0xb  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00aab7     0xb  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00aac2     0xb  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00aacd     0xa  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00aad7     0x9  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00aae0     0x9  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00aae9     0x9  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00aaf2     0x8  main.o [1]
-  .near_func.text  ro code  0x00aafa     0x8  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab02     0x8  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab0a     0x8  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab12     0x8  xprintffull_nomb.o [4]
-  .near.rodata     const    0x00ab1a     0x7  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab21     0x7  stm8s_gpio.o [1]
-  .near_func.text  ro code  0x00ab28     0x7  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab2f     0x7  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab36     0x6  bsp_time2.o [1]
-  .near_func.text  ro code  0x00ab3c     0x6  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab42     0x6  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab48     0x6  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab4e     0x6  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab54     0x6  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab5a     0x5  bsp_task.o [1]
-  .near_func.text  ro code  0x00ab5f     0x5  stm8s_adc1.o [1]
-  .near_func.text  ro code  0x00ab64     0x5  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab69     0x5  cexit.o [4]
-  .near.rodata     const    0x00ab6e     0x4  stm8s_clk.o [1]
-  .near.rodata     const    0x00ab72     0x4  xprintffull_nomb.o [4]
-  .near.rodata     const    0x00ab76     0x4  xprintffull_nomb.o [4]
-  .near.rodata     const    0x00ab7a     0x4  xprintffull_nomb.o [4]
-  .near.rodata     const    0x00ab7e     0x4  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab82     0x4  bsp_time2.o [1]
-  .near_func.text  ro code  0x00ab86     0x4  stm8s_gpio.o [1]
-  .near_func.text  ro code  0x00ab8a     0x4  stm8s_uart2.o [1]
-  .near_func.text  ro code  0x00ab8e     0x3  bsp_ADC.o [1]
-  .near_func.text  ro code  0x00ab91     0x3  interrupt.o [4]
-  .near_func.text  ro code  0x00ab94     0x3  low_level_init.o [4]
-  .near_func.text  ro code  0x00ab97     0x3  exit.o [4]
-  .near_func.text  ro code  0x00ab9a     0x3  unhandled_exception.o [4]
-  .near.rodata     const    0x00ab9d     0x2  xprintffull_nomb.o [4]
-  .near_func.text  ro code  0x00ab9f     0x1  __dbg_break.o [3]
-                          - 0x00aba0  0x2b20
+  .near_func.text  ro code  0x00a4bc    0x3c  bsp_task.o [1]
+  .near_func.text  const    0x00a4f8    0x3c  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00a534    0x3a  bsp_time2.o [1]
+  .near_func.text  ro code  0x00a56e    0x38  bsp_task.o [1]
+  .near_func.text  ro code  0x00a5a6    0x37  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00a5dd    0x33  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00a610    0x31  stm8s_adc1.o [1]
+  .near_func.text  ro code  0x00a641    0x30  bsp_task.o [1]
+  .near_func.text  ro code  0x00a671    0x30  div.o [4]
+  .near_func.text  ro code  0x00a6a1    0x2f  stm8s_tim2.o [1]
+  .near_func.text  ro code  0x00a6d0    0x2f  stm8s_tim2.o [1]
+  .near_func.text  ro code  0x00a6ff    0x2f  xprintffull_nomb.o [4]
+  .near.rodata     const    0x00a72e    0x2e  bsp_uart2.o [1]
+  .near_func.text  ro code  0x00a75c    0x2c  dc_util.o [4]
+  .near_func.text  ro code  0x00a788    0x2b  bsp_time2.o [1]
+  .near_func.text  ro code  0x00a7b3    0x2a  bsp_task.o [1]
+  .near_func.text  ro code  0x00a7dd    0x29  bsp_ADC.o [1]
+  .near_func.text  ro code  0x00a806    0x29  stm8s_uart2.o [1]
+  .near_func.text  ro code  0x00a82f    0x28  bsp_uart2.o [1]
+  .near_func.text  ro code  0x00a857    0x28  stm8s_tim2.o [1]
+  .near_func.text  ro code  0x00a87f    0x23  bsp_task.o [1]
+  .near_func.text  ro code  0x00a8a2    0x22  bsp_time2.o [1]
+  .near_func.text  ro code  0x00a8c4    0x22  bsp_time2.o [1]
+  .near_func.text  ro code  0x00a8e6    0x21  memchr.o [4]
+  .iar.init_table  const    0x00a907     0x8  - Linker created -
+  .near_func.text  ro code  0x00a90f    0x1f  memcpy.o [4]
+  .near_func.text  ro code  0x00a92e    0x1e  init_small.o [4]
+  .near_func.text  ro code  0x00a94c    0x1d  bsp_ADC.o [1]
+  .near_func.text  ro code  0x00a969    0x1d  bsp_task.o [1]
+  .near_func.text  ro code  0x00a986    0x1d  printf.o [4]
+  .near_func.text  ro code  0x00a9a3    0x1b  xprout.o [4]
+  .near_func.text  ro code  0x00a9be    0x19  bsp_uart2.o [1]
+  .near_func.text  ro code  0x00a9d7    0x18  main.o [1]
+  .near_func.text  ro code  0x00a9ef    0x15  strchr.o [4]
+  .near_func.text  ro code  0x00aa04    0x14  init.o [4]
+  .near_func.text  ro code  0x00aa18    0x14  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00aa2c    0x14  __dbg_xxexit.o [3]
+  .near_func.text  ro code  0x00aa40    0x13  cstartup.o [4]
+  .near_func.text  ro code  0x00aa53    0x12  main.o [1]
+  .near.rodata     const    0x00aa65    0x10  bsp_task.o [1]
+  .near.rodata     const    0x00aa75     0xf  bsp_uart2.o [1]
+  .near_func.text  ro code  0x00aa84     0xe  bsp_uart2.o [1]
+  .near_func.text  ro code  0x00aa92     0xd  strlen.o [4]
+  .near_func.text  ro code  0x00aa9f     0xd  move.o [4]
+  .near_func.text  ro code  0x00aaac     0xc  stm8s_tim2.o [1]
+  .near_func.text  ro code  0x00aab8     0xc  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00aac4     0xc  switch.o [4]
+  .near_func.text  ro code  0x00aad0     0xb  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00aadb     0xb  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00aae6     0xb  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00aaf1     0xa  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00aafb     0x9  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab04     0x9  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab0d     0x9  xprintffull_nomb.o [4]
+  .near.rodata     const    0x00ab16     0x8  bsp_task.o [1]
+  .near_func.text  ro code  0x00ab1e     0x8  main.o [1]
+  .near_func.text  ro code  0x00ab26     0x8  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab2e     0x8  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab36     0x8  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab3e     0x8  xprintffull_nomb.o [4]
+  .near.rodata     const    0x00ab46     0x7  bsp_task.o [1]
+  .near.rodata     const    0x00ab4d     0x7  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab54     0x7  stm8s_gpio.o [1]
+  .near_func.text  ro code  0x00ab5b     0x7  stm8s_gpio.o [1]
+  .near_func.text  ro code  0x00ab62     0x7  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab69     0x7  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab70     0x6  bsp_time2.o [1]
+  .near_func.text  ro code  0x00ab76     0x6  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab7c     0x6  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab82     0x6  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab88     0x6  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab8e     0x6  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00ab94     0x5  bsp_task.o [1]
+  .near_func.text  ro code  0x00ab99     0x5  stm8s_adc1.o [1]
+  .near_func.text  ro code  0x00ab9e     0x5  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00aba3     0x5  cexit.o [4]
+  .near.rodata     const    0x00aba8     0x4  stm8s_clk.o [1]
+  .near.rodata     const    0x00abac     0x4  xprintffull_nomb.o [4]
+  .near.rodata     const    0x00abb0     0x4  xprintffull_nomb.o [4]
+  .near.rodata     const    0x00abb4     0x4  xprintffull_nomb.o [4]
+  .near.rodata     const    0x00abb8     0x4  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00abbc     0x4  bsp_time2.o [1]
+  .near_func.text  ro code  0x00abc0     0x4  stm8s_gpio.o [1]
+  .near_func.text  ro code  0x00abc4     0x4  stm8s_uart2.o [1]
+  .near_func.text  ro code  0x00abc8     0x3  bsp_ADC.o [1]
+  .near_func.text  ro code  0x00abcb     0x3  interrupt.o [4]
+  .near_func.text  ro code  0x00abce     0x3  low_level_init.o [4]
+  .near_func.text  ro code  0x00abd1     0x3  exit.o [4]
+  .near_func.text  ro code  0x00abd4     0x3  unhandled_exception.o [4]
+  .near.rodata     const    0x00abd7     0x2  xprintffull_nomb.o [4]
+  .near_func.text  ro code  0x00abd9     0x1  __dbg_break.o [3]
+                          - 0x00abda  0x2b5a
 
 
 *******************************************************************************
@@ -290,17 +293,17 @@ Zero (__iar_zero_init2)
     ------                 -------  -------  -------
 D:\program\venus_stm8\venus_protect_stm8\Debug\Obj: [1]
     bsp_ADC.o                   73                 3
-    bsp_task.o                 372       16       24
+    bsp_task.o                 396       31       24
     bsp_time2.o                179                10
     bsp_uart2.o                 79      144
-    main.o                      38
+    main.o                      50
     stm8s_adc1.o             1 338       62
     stm8s_clk.o                148       65
-    stm8s_gpio.o               283       62
+    stm8s_gpio.o               290       62
     stm8s_tim2.o               383       62
     stm8s_uart2.o              790       63
     ------------------------------------------------
-    Total:                   3 683      474       37
+    Total:                   3 726      489       37
 
 command line: [2]
     ------------------------------------------------
@@ -344,7 +347,7 @@ dlstm8smn.a: [4]
 
     Linker created                        8      256
 ----------------------------------------------------
-    Grand Total:            10 473      695      309
+    Grand Total:            10 516      710      309
 
 
 *******************************************************************************
@@ -353,8 +356,8 @@ dlstm8smn.a: [4]
 
 Entry                    Address   Size  Type      Object
 -----                    -------   ----  ----      ------
-.iar.init_table$$Base   0x00a8ef          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x00a8f7          --   Gb  - Linker created -
+.iar.init_table$$Base   0x00a907          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00a90f          --   Gb  - Linker created -
 ?and32_l0_l0_0x         0x00929b         Code  Gb  long.o [4]
 ?and32_l0_l0_l1         0x009298         Code  Gb  long.o [4]
 ?b0                     0x000000         Data  Gb  vregs.o [4]
@@ -373,10 +376,10 @@ Entry                    Address   Size  Type      Object
 ?b7                     0x000007         Data  Gb  vregs.o [4]
 ?b8                     0x000008         Data  Gb  vregs.o [4]
 ?b9                     0x000009         Data  Gb  vregs.o [4]
-?dc32_l0                0x00a727         Code  Gb  dc_util.o [4]
-?dc32_l1                0x00a734         Code  Gb  dc_util.o [4]
-?dc32_px                0x00a741         Code  Gb  dc_util.o [4]
-?dc8_px                 0x00a720         Code  Gb  dc_util.o [4]
+?dc32_l0                0x00a763         Code  Gb  dc_util.o [4]
+?dc32_l1                0x00a770         Code  Gb  dc_util.o [4]
+?dc32_px                0x00a77d         Code  Gb  dc_util.o [4]
+?dc8_px                 0x00a75c         Code  Gb  dc_util.o [4]
 ?dec32_0x_0x            0x0090fa         Code  Gb  long.o [4]
 ?dec32_l0_l0            0x0090f5         Code  Gb  long.o [4]
 ?e0                     0x000001         Data  Gb  vregs.o [4]
@@ -449,7 +452,7 @@ Entry                    Address   Size  Type      Object
 ?mov_w5_w0              0x009a43         Code  Gb  vreg_util.o [4]
 ?mov_w5_w1              0x009a9e         Code  Gb  vreg_util.o [4]
 ?mov_w7_w1              0x009aab         Code  Gb  vreg_util.o [4]
-?move1616_v_x_y_a       0x00aa6f         Code  Gb  move.o [4]
+?move1616_v_x_y_a       0x00aa9f         Code  Gb  move.o [4]
 ?mul16_x_x_w0           0x00a27a         Code  Gb  short.o [4]
 ?mul32_l0_l0_0x         0x00912c         Code  Gb  long.o [4]
 ?mul32_l0_l0_dl         0x009129         Code  Gb  long.o [4]
@@ -486,7 +489,7 @@ Entry                    Address   Size  Type      Object
 ?srl16_x_x_4            0x00a2c0         Code  Gb  short.o [4]
 ?sub32_l0_l0_0x         0x009111         Code  Gb  long.o [4]
 ?sub32_l0_l0_l1         0x00910e         Code  Gb  long.o [4]
-?switch8vlt_0x_a_0x     0x00aaa0         Code  Gb  switch.o [4]
+?switch8vlt_0x_a_0x     0x00aac4         Code  Gb  switch.o [4]
 ?ucmp32_c_l0_l1         0x009276         Code  Gb  long.o [4]
 ?udiv32_l0_dl_l1        0x0091b8         Code  Gb  long.o [4]
 ?udiv32_l0_l0_dl        0x0091bd         Code  Gb  long.o [4]
@@ -503,115 +506,116 @@ Entry                    Address   Size  Type      Object
 ?w7                     0x00000e         Data  Gb  vregs.o [4]
 ADC1_ClearITPendingBit  0x009e48   0xad  Code  Gb  stm8s_adc1.o [1]
 ADC1_ConversionConfig   0x009d8a   0xbe  Code  Gb  stm8s_adc1.o [1]
-ADC1_DeInit             0x00a5d4   0x31  Code  Gb  stm8s_adc1.o [1]
+ADC1_DeInit             0x00a610   0x31  Code  Gb  stm8s_adc1.o [1]
 ADC1_ExternalTriggerConfig
                         0x00a079   0x59  Code  Gb  stm8s_adc1.o [1]
 ADC1_GetConversionValue
                         0x00a17e   0x55  Code  Gb  stm8s_adc1.o [1]
-ADC1_IRQHandler         0x00a934   0x1d  Code  Gb  bsp_ADC.o [1]
+ADC1_IRQHandler         0x00a94c   0x1d  Code  Gb  bsp_ADC.o [1]
 ADC1_Init               0x00950e  0x19a  Code  Gb  stm8s_adc1.o [1]
 ADC1_PrescalerConfig    0x00a129   0x55  Code  Gb  stm8s_adc1.o [1]
 ADC1_SchmittTriggerConfig
                         0x009bc2   0xfc  Code  Gb  stm8s_adc1.o [1]
-ADC1_StartConversion    0x00ab5f    0x5  Code  Gb  stm8s_adc1.o [1]
+ADC1_StartConversion    0x00ab99    0x5  Code  Gb  stm8s_adc1.o [1]
 ADC1_sample_value       0x00002a    0x3  Data  Gb  bsp_ADC.o [1]
 CLK_GetClockFreq        0x00a0d2   0x57  Code  Gb  stm8s_clk.o [1]
 CLK_HSIPrescalerConfig  0x00a47f   0x3d  Code  Gb  stm8s_clk.o [1]
 CSTACK$$Base            0x000700          --   Gb  - Linker created -
 CSTACK$$Limit           0x000800          --   Gb  - Linker created -
 GPIO_Init               0x009ab2  0x110  Code  Gb  stm8s_gpio.o [1]
-GPIO_WriteHigh          0x00ab21    0x7  Code  Gb  stm8s_gpio.o [1]
-GPIO_WriteLow           0x00ab86    0x4  Code  Gb  stm8s_gpio.o [1]
-HSIDivFactor            0x00ab6e    0x4  Data  Gb  stm8s_clk.o [1]
+GPIO_ReadInputPin       0x00ab5b    0x7  Code  Gb  stm8s_gpio.o [1]
+GPIO_WriteHigh          0x00ab54    0x7  Code  Gb  stm8s_gpio.o [1]
+GPIO_WriteLow           0x00abc0    0x4  Code  Gb  stm8s_gpio.o [1]
+HSIDivFactor            0x00aba8    0x4  Data  Gb  stm8s_clk.o [1]
 INTVEC$$Base            0x008000          --   Gb  - Linker created -
 INTVEC$$Limit           0x008080          --   Gb  - Linker created -
-IR_drv_adc_sample_ctrl  0x00ab5a    0x5  Code  Gb  bsp_task.o [1]
+IR_drv_adc_sample_ctrl  0x00ab94    0x5  Code  Gb  bsp_task.o [1]
 LoadInt                 0x00a308   0x41  Code  Lc  xprintffull_nomb.o [4]
-Region$$Table$$Base     0x00a8ef          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00a8f7          --   Gb  - Linker created -
-TIM2_ARRPreloadConfig   0x00a694   0x2f  Code  Gb  stm8s_tim2.o [1]
-TIM2_ClearITPendingBit  0x00a81b   0x28  Code  Gb  stm8s_tim2.o [1]
-TIM2_Cmd                0x00a665   0x2f  Code  Gb  stm8s_tim2.o [1]
+Region$$Table$$Base     0x00a907          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00a90f          --   Gb  - Linker created -
+TIM2_ARRPreloadConfig   0x00a6d0   0x2f  Code  Gb  stm8s_tim2.o [1]
+TIM2_ClearITPendingBit  0x00a857   0x28  Code  Gb  stm8s_tim2.o [1]
+TIM2_Cmd                0x00a6a1   0x2f  Code  Gb  stm8s_tim2.o [1]
 TIM2_ITConfig           0x00a1d3   0x54  Code  Gb  stm8s_tim2.o [1]
 TIM2_PrescalerConfig    0x009ef5   0x99  Code  Gb  stm8s_tim2.o [1]
-TIM2_TimeBaseInit       0x00aa88    0xc  Code  Gb  stm8s_tim2.o [1]
+TIM2_TimeBaseInit       0x00aaac    0xc  Code  Gb  stm8s_tim2.o [1]
 TIM2_UPD_OVF_BRK_IRQHandler
-                        0x00a74c   0x2b  Code  Gb  bsp_time2.o [1]
+                        0x00a788   0x2b  Code  Gb  bsp_time2.o [1]
 TIM2_sample             0x000010    0xa  Data  Gb  bsp_time2.o [1]
-UART2_DeInit            0x00a7ca   0x29  Code  Gb  stm8s_uart2.o [1]
+UART2_DeInit            0x00a806   0x29  Code  Gb  stm8s_uart2.o [1]
 UART2_GetFlagStatus     0x009cbe   0xcc  Code  Gb  stm8s_uart2.o [1]
 UART2_Init              0x0092f1  0x21d  Code  Gb  stm8s_uart2.o [1]
-UART2_SendData8         0x00ab8a    0x4  Code  Gb  stm8s_uart2.o [1]
+UART2_SendData8         0x00abc4    0x4  Code  Gb  stm8s_uart2.o [1]
 _GenldFullNoMb          0x008d4f  0x383  Code  Lc  xprintffull_nomb.o [4]
 _LdtobFullNoMb          0x00893d  0x412  Code  Lc  xprintffull_nomb.o [4]
 _LitobFullNoMb          0x0096a8  0x176  Code  Lc  xprintffull_nomb.o [4]
 _PrintfFullNoMb         0x0084e0  0x45d  Code  Gb  xprintffull_nomb.o [4]
-_Prout                  0x00a98b   0x1b  Code  Gb  xprout.o [4]
-_PutcharFullNoMb        0x00a6c3   0x2f  Code  Lc  xprintffull_nomb.o [4]
-_PutcharsFullNoMb       0x00a5a1   0x33  Code  Lc  xprintffull_nomb.o [4]
-__DebugBreak            0x00ab9f    0x1  Code  Gb  __dbg_break.o [3]
-__exit                  0x00a9fc   0x14  Code  Gb  __dbg_xxexit.o [3]
+_Prout                  0x00a9a3   0x1b  Code  Gb  xprout.o [4]
+_PutcharFullNoMb        0x00a6ff   0x2f  Code  Lc  xprintffull_nomb.o [4]
+_PutcharsFullNoMb       0x00a5dd   0x33  Code  Lc  xprintffull_nomb.o [4]
+__DebugBreak            0x00abd9    0x1  Code  Gb  __dbg_break.o [3]
+__exit                  0x00aa2c   0x14  Code  Gb  __dbg_xxexit.o [3]
 __iar_Dnorm             0x00981e         Code  Gb  float_libsup.o [4]
 __iar_Dscale            0x0098ac         Code  Gb  float_libsup.o [4]
 __iar_Dunscale          0x00985a         Code  Gb  float_libsup.o [4]
-__iar_Memchr            0x00a8ce   0x21  Code  Gb  memchr.o [4]
-__iar_Strchr            0x00a9bf   0x15  Code  Gb  strchr.o [4]
-__iar_data_init2        0x00a9d4   0x14  Code  Gb  init.o [4]
-__iar_program_start     0x00aa10         Code  Gb  cstartup.o [4]
+__iar_Memchr            0x00a8e6   0x21  Code  Gb  memchr.o [4]
+__iar_Strchr            0x00a9ef   0x15  Code  Gb  strchr.o [4]
+__iar_data_init2        0x00aa04   0x14  Code  Gb  init.o [4]
+__iar_program_start     0x00aa40         Code  Gb  cstartup.o [4]
 __iar_unhandled_exception
-                        0x00ab9a         Code  Gb  unhandled_exception.o [4]
-__iar_zero_init2        0x00a916         Code  Gb  init_small.o [4]
+                        0x00abd4         Code  Gb  unhandled_exception.o [4]
+__iar_zero_init2        0x00a92e         Code  Gb  init_small.o [4]
 __intvec                0x008000         Data  Gb  interrupt.o [4]
-__low_level_init        0x00ab94    0x3  Code  Gb  low_level_init.o [4]
-_exit                   0x00ab69         Code  Gb  cexit.o [4]
-_interrupt_15           0x00a74c         Code  Gb  bsp_time2.o [1]
-_interrupt_24           0x00a934         Code  Gb  bsp_ADC.o [1]
+__low_level_init        0x00abce    0x3  Code  Gb  low_level_init.o [4]
+_exit                   0x00aba3         Code  Gb  cexit.o [4]
+_interrupt_15           0x00a788         Code  Gb  bsp_time2.o [1]
+_interrupt_24           0x00a94c         Code  Gb  bsp_ADC.o [1]
 adc_current_base_value  0x00002d    0x2  Data  Gb  bsp_task.o [1]
 adc_current_base_value_calc
-                        0x00a951   0x1d  Code  Gb  bsp_task.o [1]
+                        0x00a969   0x1d  Code  Gb  bsp_task.o [1]
 adc_sample_start        0x000034    0x1  Data  Gb  bsp_task.o [1]
-assert_failed           0x00aa54    0xe  Code  Gb  bsp_uart2.o [1]
+assert_failed           0x00aa84    0xe  Code  Gb  bsp_uart2.o [1]
 current_time            0x00001a    0x4  Data  Gb  bsp_task.o [1]
-device_init             0x00aa23   0x12  Code  Gb  main.o [1]
-div                     0x00a635   0x30  Code  Gb  div.o [4]
-exit                    0x00ab97    0x3  Code  Gb  exit.o [4]
-get_adc_value           0x00ab8e    0x3  Code  Gb  bsp_ADC.o [1]
-get_current_time        0x00ab36    0x6  Code  Gb  bsp_time2.o [1]
+device_init             0x00aa53   0x12  Code  Gb  main.o [1]
+div                     0x00a671   0x30  Code  Gb  div.o [4]
+exit                    0x00abd1    0x3  Code  Gb  exit.o [4]
+get_adc_value           0x00abc8    0x3  Code  Gb  bsp_ADC.o [1]
+get_current_time        0x00ab70    0x6  Code  Gb  bsp_time2.o [1]
 get_time2_sample_adc_value
-                        0x00ab82    0x4  Code  Gb  bsp_time2.o [1]
-get_timer_interval      0x00a867   0x23  Code  Gb  bsp_task.o [1]
+                        0x00abbc    0x4  Code  Gb  bsp_time2.o [1]
+get_timer_interval      0x00a87f   0x23  Code  Gb  bsp_task.o [1]
 handle_adc1_sample_poll
-                        0x00a8ac   0x22  Code  Gb  bsp_time2.o [1]
+                        0x00a8c4   0x22  Code  Gb  bsp_time2.o [1]
 handle_light_bar_status
-                        0x00a532    0x1  Code  Gb  bsp_task.o [1]
+                        0x00a56e    0x1  Code  Gb  bsp_task.o [1]
 light_bar_debound_cnt   0x000033    0x1  Data  Gb  bsp_task.o [1]
 light_bar_debound_sample
-                        0x00a533   0x37  Code  Gb  bsp_task.o [1]
+                        0x00a56f   0x37  Code  Gb  bsp_task.o [1]
 light_bar_old_status    0x000032    0x1  Data  Gb  bsp_task.o [1]
 light_bar_sample_value_timer2_cb
-                        0x00a4f8   0x3a  Code  Gb  bsp_time2.o [1]
+                        0x00a534   0x3a  Code  Gb  bsp_time2.o [1]
 light_bar_status        0x000031    0x1  Data  Gb  bsp_task.o [1]
-lightbar_get_status     0x00a605   0x30  Code  Gb  bsp_task.o [1]
-main                    0x00aaf2    0x8  Code  Gb  main.o [1]
-memcpy                  0x00a8f7   0x1f  Code  Gb  memcpy.o [4]
-pad                     0x00a56a   0x37  Code  Lc  xprintffull_nomb.o [4]
-printf                  0x00a96e   0x1d  Code  Gb  printf.o [4]
-putchar                 0x00a9a6   0x19  Code  Gb  bsp_uart2.o [1]
+lightbar_get_status     0x00a641   0x30  Code  Gb  bsp_task.o [1]
+main                    0x00ab1e    0x8  Code  Gb  main.o [1]
+memcpy                  0x00a90f   0x1f  Code  Gb  memcpy.o [4]
+pad                     0x00a5a6   0x37  Code  Lc  xprintffull_nomb.o [4]
+printf                  0x00a986   0x1d  Code  Gb  printf.o [4]
+putchar                 0x00a9be   0x19  Code  Gb  bsp_uart2.o [1]
 pwm_test_cnt            0x00002f    0x2  Data  Gb  bsp_task.o [1]
 real_task_poll          0x009fbb   0x34  Code  Gb  bsp_task.o [1]
 scale                   0x00a2c5   0x43  Code  Lc  xprintffull_nomb.o [4]
-strlen                  0x00aa62    0xd  Code  Gb  strlen.o [4]
+strlen                  0x00aa92    0xd  Code  Gb  strlen.o [4]
 task_mark_time_100ms    0x000022    0x4  Data  Gb  bsp_task.o [1]
 task_mark_time_10ms     0x00001e    0x4  Data  Gb  bsp_task.o [1]
 task_mark_time_1s       0x000026    0x4  Data  Gb  bsp_task.o [1]
 time_task_poll          0x009fef   0x18  Code  Gb  bsp_task.o [1]
-timer_100ms_task        0x00a843   0x24  Code  Gb  bsp_task.o [1]
-timer_10ms_task         0x00a777   0x2a  Code  Gb  bsp_task.o [1]
+timer_100ms_task        0x00a4bc   0x3c  Code  Gb  bsp_task.o [1]
+timer_10ms_task         0x00a7b3   0x2a  Code  Gb  bsp_task.o [1]
 timer_1s_task           0x009f8e   0x2d  Code  Gb  bsp_task.o [1]
-uart2_init              0x00a7f3   0x28  Code  Gb  bsp_uart2.o [1]
-user_ADC_init           0x00a7a1   0x29  Code  Gb  bsp_ADC.o [1]
-user_GPIO_init          0x00aa7c    0xc  Code  Gb  main.o [1]
-user_time2_init         0x00a88a   0x22  Code  Gb  bsp_time2.o [1]
+uart2_init              0x00a82f   0x28  Code  Gb  bsp_uart2.o [1]
+user_ADC_init           0x00a7dd   0x29  Code  Gb  bsp_ADC.o [1]
+user_GPIO_init          0x00a9d7   0x18  Code  Gb  main.o [1]
+user_time2_init         0x00a8a2   0x22  Code  Gb  bsp_time2.o [1]
 
 
 [1] = D:\program\venus_stm8\venus_protect_stm8\Debug\Obj
@@ -619,8 +623,8 @@ user_time2_init         0x00a88a   0x22  Code  Gb  bsp_time2.o [1]
 [3] = dbgstm8smd.a
 [4] = dlstm8smn.a
 
-  10 473 bytes of readonly  code memory
-     695 bytes of readonly  data memory
+  10 516 bytes of readonly  code memory
+     710 bytes of readonly  data memory
      309 bytes of readwrite data memory
 
 Errors: none

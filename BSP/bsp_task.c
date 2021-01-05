@@ -124,6 +124,19 @@ void time_cnt_init(void)
   task_mark_time_1s= get_current_time();
 }
 
+//检测上面盖子开关状态
+void check_open_close_status(void)
+{
+   if(GPIO_ReadInputPin(OPEN_CLOSE_PORT, OPEN_CLOSE_PIN) == 0)
+   {
+     printf_debug("close\r\n");
+   }
+   else
+   {
+     printf_debug("open\r\n");
+   }
+}
+
 /*
  *获取当前时间与时间任务参数（old_time）记录下来的时间差值
  */
@@ -153,7 +166,7 @@ void timer_10ms_task(void)
      adc_current_base_value_calc(); 
      lightbar_get_status();
      light_bar_debound_sample();
-     
+     check_open_close_status();
      ////////任务区执行区////////
   }
 }
@@ -194,19 +207,19 @@ void timer_1s_task(void)
 void real_task_poll()
 {
       pwm_test_cnt = pwm_test_cnt+1;
-      if(pwm_test_cnt <= 60)
+      if(pwm_test_cnt <= 2)
       {
         //GPIO_WriteHigh(GPIOC, GPIO_PIN_4);
         _hal_set_high_opt_led_bar_cmd();
       }
       
-      if(pwm_test_cnt > 60)
+      if(pwm_test_cnt > 2)
       {
         //GPIO_WriteLow(GPIOC, GPIO_PIN_4);
         _hal_set_low_opt_led_bar_cmd();
       }
       
-      if(pwm_test_cnt > 100)
+      if(pwm_test_cnt > 20)
       {
         pwm_test_cnt = 0;
       }
