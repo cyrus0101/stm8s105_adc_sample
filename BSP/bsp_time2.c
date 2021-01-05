@@ -62,7 +62,7 @@ void light_bar_sample_value_timer2_cb(void)
   if(TIM2_sample.cnt >= LIGHT_BAR_ON_TIME)
   {
     //设置IR发射口为低
-    //_hal_set_low_opt_led_bar_cmd();
+    _hal_set_low_opt_led_bar_cmd();
     
     //if sample times >= 10, get the max value,init others params
     if(TIM2_sample.cnt >= SAMPLE_TIME)

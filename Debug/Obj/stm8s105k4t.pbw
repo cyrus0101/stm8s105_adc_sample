@@ -37198,41 +37198,41 @@
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@398@macro@MIN_DELTA_DETECTION",
+    "ID": "c:bsp_task.c@536@macro@IR_OPEN_MIN",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "MIN_DELTA_DETECTION",
+    "display": "IR_OPEN_MIN",
     "location": {
       "column": "9",
-      "line": "13",
+      "line": "15",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
-    "name": "MIN_DELTA_DETECTION",
+    "name": "IR_OPEN_MIN",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@456@macro@MIN_THREASHOLD",
+    "ID": "c:bsp_task.c@609@macro@IR_CLOSE_MAX",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "MIN_THREASHOLD",
+    "display": "IR_CLOSE_MAX",
     "location": {
       "column": "9",
-      "line": "14",
+      "line": "16",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
-    "name": "MIN_THREASHOLD",
+    "name": "IR_CLOSE_MAX",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@532@macro@THREASHOLD_RISING",
+    "ID": "c:bsp_task.c@692@macro@THREASHOLD_RISING",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "THREASHOLD_RISING",
     "location": {
       "column": "9",
-      "line": "15",
+      "line": "18",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "THREASHOLD_RISING",
@@ -37240,13 +37240,13 @@
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@567@macro@THREASHOLD_FALLING",
+    "ID": "c:bsp_task.c@727@macro@THREASHOLD_FALLING",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "THREASHOLD_FALLING",
     "location": {
       "column": "9",
-      "line": "16",
+      "line": "19",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "THREASHOLD_FALLING",
@@ -37254,13 +37254,13 @@
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@606@macro@LIGHT_BAR_CTRL_OPEN",
+    "ID": "c:bsp_task.c@766@macro@LIGHT_BAR_CTRL_OPEN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LIGHT_BAR_CTRL_OPEN",
     "location": {
       "column": "9",
-      "line": "18",
+      "line": "21",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "LIGHT_BAR_CTRL_OPEN",
@@ -37268,13 +37268,13 @@
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@641@macro@LIGHT_BAR_CTRL_CLOSE",
+    "ID": "c:bsp_task.c@801@macro@LIGHT_BAR_CTRL_CLOSE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LIGHT_BAR_CTRL_CLOSE",
     "location": {
       "column": "9",
-      "line": "19",
+      "line": "22",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "LIGHT_BAR_CTRL_CLOSE",
@@ -37282,13 +37282,13 @@
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@676@macro@LIGHT_BAR_CTRL_ERROR",
+    "ID": "c:bsp_task.c@836@macro@LIGHT_BAR_CTRL_ERROR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LIGHT_BAR_CTRL_ERROR",
     "location": {
       "column": "9",
-      "line": "20",
+      "line": "23",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "LIGHT_BAR_CTRL_ERROR",
@@ -37302,7 +37302,7 @@
     "display": "light_bar_status",
     "location": {
       "column": "9",
-      "line": "21",
+      "line": "24",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "light_bar_status",
@@ -37316,7 +37316,7 @@
     "display": "light_bar_old_status",
     "location": {
       "column": "9",
-      "line": "22",
+      "line": "25",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "light_bar_old_status",
@@ -37330,7 +37330,7 @@
     "display": "light_bar_debound_cnt",
     "location": {
       "column": "9",
-      "line": "23",
+      "line": "26",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "light_bar_debound_cnt",
@@ -37344,7 +37344,7 @@
     "display": "current_time",
     "location": {
       "column": "10",
-      "line": "26",
+      "line": "29",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "current_time",
@@ -37358,7 +37358,7 @@
     "display": "task_mark_time_10ms",
     "location": {
       "column": "10",
-      "line": "27",
+      "line": "30",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "task_mark_time_10ms",
@@ -37372,7 +37372,7 @@
     "display": "task_mark_time_100ms",
     "location": {
       "column": "10",
-      "line": "28",
+      "line": "31",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "task_mark_time_100ms",
@@ -37386,7 +37386,7 @@
     "display": "task_mark_time_1s",
     "location": {
       "column": "10",
-      "line": "29",
+      "line": "32",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "task_mark_time_1s",
@@ -37394,13 +37394,13 @@
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@1044@macro@FILTER_SIZE",
+    "ID": "c:bsp_task.c@1204@macro@FILTER_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FILTER_SIZE",
     "location": {
       "column": "9",
-      "line": "32",
+      "line": "35",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "FILTER_SIZE",
@@ -37414,7 +37414,7 @@
     "display": "adc_current_base_value",
     "location": {
       "column": "10",
-      "line": "33",
+      "line": "36",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "adc_current_base_value",
@@ -37428,7 +37428,7 @@
     "display": "adc_sample_start",
     "location": {
       "column": "13",
-      "line": "34",
+      "line": "37",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "adc_sample_start",
@@ -37442,10 +37442,52 @@
     "display": "pwm_test_cnt",
     "location": {
       "column": "10",
-      "line": "36",
+      "line": "39",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "pwm_test_cnt",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:bsp_task.c@1382@macro@CLOSE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CLOSE",
+    "location": {
+      "column": "13",
+      "line": "42",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
+    },
+    "name": "CLOSE",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:bsp_task.c@1406@macro@OPEN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OPEN",
+    "location": {
+      "column": "13",
+      "line": "43",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
+    },
+    "name": "OPEN",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@open_close_status",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "open_close_status",
+    "location": {
+      "column": "9",
+      "line": "45",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
+    },
+    "name": "open_close_status",
     "origin": "project_file",
     "scope": null
   },
@@ -37456,7 +37498,7 @@
     "display": "void adc_current_base_value_calc(void)",
     "location": {
       "column": "6",
-      "line": "42",
+      "line": "50",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "adc_current_base_value_calc",
@@ -37464,13 +37506,13 @@
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@1296@F@adc_current_base_value_calc@the_current_ad_value",
+    "ID": "c:bsp_task.c@1595@F@adc_current_base_value_calc@the_current_ad_value",
     "What": "Variable",
     "defdec": "Def",
     "display": "the_current_ad_value",
     "location": {
       "column": "12",
-      "line": "44",
+      "line": "52",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "the_current_ad_value",
@@ -37484,7 +37526,7 @@
     "display": "void IR_drv_adc_sample_ctrl(void)",
     "location": {
       "column": "6",
-      "line": "53",
+      "line": "61",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "IR_drv_adc_sample_ctrl",
@@ -37498,7 +37540,7 @@
     "display": "void lightbar_get_status(void)",
     "location": {
       "column": "6",
-      "line": "67",
+      "line": "75",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "lightbar_get_status",
@@ -37506,13 +37548,13 @@
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@1895@F@lightbar_get_status@lightbar_current_ad_value",
+    "ID": "c:bsp_task.c@2192@F@lightbar_get_status@lightbar_current_ad_value",
     "What": "Variable",
     "defdec": "Def",
     "display": "lightbar_current_ad_value",
     "location": {
       "column": "12",
-      "line": "69",
+      "line": "77",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "lightbar_current_ad_value",
@@ -37526,7 +37568,7 @@
     "display": "void handle_light_bar_status(void)",
     "location": {
       "column": "6",
-      "line": "86",
+      "line": "96",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "handle_light_bar_status",
@@ -37540,7 +37582,7 @@
     "display": "void light_bar_debound_sample(void)",
     "location": {
       "column": "6",
-      "line": "96",
+      "line": "106",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "light_bar_debound_sample",
@@ -37554,7 +37596,7 @@
     "display": "void time_cnt_init(void)",
     "location": {
       "column": "6",
-      "line": "120",
+      "line": "130",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "time_cnt_init",
@@ -37568,7 +37610,7 @@
     "display": "void check_open_close_status(void)",
     "location": {
       "column": "6",
-      "line": "128",
+      "line": "138",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "check_open_close_status",
@@ -37582,7 +37624,7 @@
     "display": "uint32_t get_timer_interval(uint32_t)",
     "location": {
       "column": "10",
-      "line": "143",
+      "line": "155",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "get_timer_interval",
@@ -37596,7 +37638,7 @@
     "display": "void timer_10ms_task(void)",
     "location": {
       "column": "6",
-      "line": "159",
+      "line": "171",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "timer_10ms_task",
@@ -37610,7 +37652,7 @@
     "display": "void timer_100ms_task(void)",
     "location": {
       "column": "6",
-      "line": "177",
+      "line": "190",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "timer_100ms_task",
@@ -37624,7 +37666,7 @@
     "display": "void timer_1s_task(void)",
     "location": {
       "column": "6",
-      "line": "193",
+      "line": "206",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "timer_1s_task",
@@ -37632,13 +37674,13 @@
     "scope": null
   },
   {
-    "ID": "c:bsp_task.c@4896@F@timer_1s_task@ad_value",
+    "ID": "c:bsp_task.c@5598@F@timer_1s_task@ad_value",
     "What": "Variable",
     "defdec": "Def",
     "display": "ad_value",
     "location": {
       "column": "15",
-      "line": "201",
+      "line": "214",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "ad_value",
@@ -37652,7 +37694,7 @@
     "display": "void real_task_poll(void)",
     "location": {
       "column": "6",
-      "line": "207",
+      "line": "220",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "real_task_poll",
@@ -37666,7 +37708,7 @@
     "display": "void time_task_poll(void)",
     "location": {
       "column": "6",
-      "line": "228",
+      "line": "241",
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.c"
     },
     "name": "time_task_poll",
@@ -39768,7 +39810,7 @@
     "scope": null
   },
   {
-    "ID": "c:bsp_time2.c@2246@F@light_bar_sample_value_timer2_cb@ADC_sample_value",
+    "ID": "c:bsp_time2.c@2244@F@light_bar_sample_value_timer2_cb@ADC_sample_value",
     "What": "Variable",
     "defdec": "Def",
     "display": "ADC_sample_value",
@@ -40030,160 +40072,6 @@
       "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_time2.h"
     },
     "name": "get_IR_adc_value",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_conf.h@1255@macro@__STM8S_CONF_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__STM8S_CONF_H",
-    "location": {
-      "column": "9",
-      "line": "30",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "__STM8S_CONF_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_conf.h@3860@macro@USE_FULL_ASSERT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "USE_FULL_ASSERT",
-    "location": {
-      "column": "9",
-      "line": "90",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "USE_FULL_ASSERT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_conf.h@4333@macro@assert_param",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "assert_param",
-    "location": {
-      "column": "9",
-      "line": "103",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "assert_param",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@assert_failed",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void assert_failed(uint8_t *, uint32_t)",
-    "location": {
-      "column": "6",
-      "line": "105",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "assert_failed",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@assert_failed",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void assert_failed(uint8_t *, uint32_t)",
-    "location": {
-      "column": "6",
-      "line": "105",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "assert_failed",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_conf.h@4683@macro@ON",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ON",
-    "location": {
-      "column": "10",
-      "line": "111",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "ON",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_conf.h@4706@macro@OFF",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OFF",
-    "location": {
-      "column": "10",
-      "line": "112",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "OFF",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_conf.h@4731@macro@BSP_SUCCESS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BSP_SUCCESS",
-    "location": {
-      "column": "10",
-      "line": "114",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "BSP_SUCCESS",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_conf.h@4766@macro@BSP_FAIL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BSP_FAIL",
-    "location": {
-      "column": "10",
-      "line": "115",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "BSP_FAIL",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_conf.h@4801@macro@BSP_ADC_SAMPLE_WAIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BSP_ADC_SAMPLE_WAIT",
-    "location": {
-      "column": "10",
-      "line": "116",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "BSP_ADC_SAMPLE_WAIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:stm8s_conf.h@4836@macro@UART2_DEBUG",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UART2_DEBUG",
-    "location": {
-      "column": "10",
-      "line": "117",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
-    },
-    "name": "UART2_DEBUG",
     "origin": "user_include",
     "scope": null
   },
@@ -40822,6 +40710,160 @@
     "scope": null
   },
   {
+    "ID": "c:stm8s_conf.h@1255@macro@__STM8S_CONF_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__STM8S_CONF_H",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "__STM8S_CONF_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_conf.h@3860@macro@USE_FULL_ASSERT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "USE_FULL_ASSERT",
+    "location": {
+      "column": "9",
+      "line": "90",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "USE_FULL_ASSERT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_conf.h@4333@macro@assert_param",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "assert_param",
+    "location": {
+      "column": "9",
+      "line": "103",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "assert_param",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@assert_failed",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void assert_failed(uint8_t *, uint32_t)",
+    "location": {
+      "column": "6",
+      "line": "105",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "assert_failed",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@assert_failed",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void assert_failed(uint8_t *, uint32_t)",
+    "location": {
+      "column": "6",
+      "line": "105",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "assert_failed",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_conf.h@4683@macro@ON",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ON",
+    "location": {
+      "column": "10",
+      "line": "111",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "ON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_conf.h@4706@macro@OFF",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OFF",
+    "location": {
+      "column": "10",
+      "line": "112",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "OFF",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_conf.h@4731@macro@BSP_SUCCESS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BSP_SUCCESS",
+    "location": {
+      "column": "10",
+      "line": "114",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "BSP_SUCCESS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_conf.h@4766@macro@BSP_FAIL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BSP_FAIL",
+    "location": {
+      "column": "10",
+      "line": "115",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "BSP_FAIL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_conf.h@4801@macro@BSP_ADC_SAMPLE_WAIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BSP_ADC_SAMPLE_WAIT",
+    "location": {
+      "column": "10",
+      "line": "116",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "BSP_ADC_SAMPLE_WAIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:stm8s_conf.h@4836@macro@UART2_DEBUG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART2_DEBUG",
+    "location": {
+      "column": "10",
+      "line": "117",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\stm8s_conf.h"
+    },
+    "name": "UART2_DEBUG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:stm8s_rst.h@1279@macro@__STM8S_RST_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -41174,6 +41216,76 @@
     "scope": null
   },
   {
+    "ID": "c:bsp_task.h@31@macro@__BSP_TASK_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__BSP_TASK_H_",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.h"
+    },
+    "name": "__BSP_TASK_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@time_task_poll",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void time_task_poll(void)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.h"
+    },
+    "name": "time_task_poll",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@time_task_poll",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void time_task_poll(void)",
+    "location": {
+      "column": "6",
+      "line": "4",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.h"
+    },
+    "name": "time_task_poll",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:bsp_task.h@100@macro@OPEN_CLOSE_PORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OPEN_CLOSE_PORT",
+    "location": {
+      "column": "9",
+      "line": "7",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.h"
+    },
+    "name": "OPEN_CLOSE_PORT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:bsp_task.h@134@macro@OPEN_CLOSE_PIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OPEN_CLOSE_PIN",
+    "location": {
+      "column": "9",
+      "line": "8",
+      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.h"
+    },
+    "name": "OPEN_CLOSE_PIN",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:DLib_Product.h@161@macro@_DLIB_PRODUCT_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -41353,76 +41465,6 @@
     },
     "name": "_ENCODING_CUR_MAX",
     "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:bsp_task.h@31@macro@__BSP_TASK_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__BSP_TASK_H_",
-    "location": {
-      "column": "9",
-      "line": "2",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.h"
-    },
-    "name": "__BSP_TASK_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@time_task_poll",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void time_task_poll(void)",
-    "location": {
-      "column": "6",
-      "line": "4",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.h"
-    },
-    "name": "time_task_poll",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@time_task_poll",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void time_task_poll(void)",
-    "location": {
-      "column": "6",
-      "line": "4",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.h"
-    },
-    "name": "time_task_poll",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:bsp_task.h@100@macro@OPEN_CLOSE_PORT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OPEN_CLOSE_PORT",
-    "location": {
-      "column": "9",
-      "line": "7",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.h"
-    },
-    "name": "OPEN_CLOSE_PORT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:bsp_task.h@134@macro@OPEN_CLOSE_PIN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OPEN_CLOSE_PIN",
-    "location": {
-      "column": "9",
-      "line": "8",
-      "path": "D:\\program\\venus_stm8\\venus_protect_stm8\\BSP\\bsp_task.h"
-    },
-    "name": "OPEN_CLOSE_PIN",
-    "origin": "user_include",
     "scope": null
   },
   {

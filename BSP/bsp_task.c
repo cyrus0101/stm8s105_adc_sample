@@ -10,8 +10,11 @@
 #define DELAY_TIMES_1S        (1000*DELAY_TIMES_1MS)
 
 //////lightbar status ckeck param/////////
-#define MIN_DELTA_DETECTION    (200U)  // 800 / 4 = 200U
-#define MIN_THREASHOLD         (987U)  //3950 / 4 = 987U  //采样ad的上限值
+//#define MIN_DELTA_DETECTION    (200U)  // 800 / 4 = 200U
+//#define MIN_THREASHOLD         (987U)  //3950 / 4 = 987U  //采样ad的上限值
+#define IR_OPEN_MIN             500      //IR打开，通道无阻碍时AD最小值
+#define IR_CLOSE_MAX            200      //IR关闭，或者通道有阻碍时候的AD最大值
+
 #define THREASHOLD_RISING       2
 #define THREASHOLD_FALLING      100
 
@@ -35,6 +38,11 @@ uint8_t     adc_sample_start = 0;
 
 uint16_t pwm_test_cnt = 0;
 
+////////////close_open status///////////
+#define     CLOSE    0
+#define     OPEN     1
+
+uint8_t open_close_status = OPEN;  //默认为开
 /*
 * 计算当前ir 接收ADC的基础采样值做参考
 * 被 @10ms_task_mark_time(); 调用
@@ -53,7 +61,7 @@ void adc_current_base_value_calc(void)
 void IR_drv_adc_sample_ctrl(void)
 {
   //打开IR发射管
-  //_hal_set_high_opt_led_bar_cmd();
+  _hal_set_high_opt_led_bar_cmd();
   
   //_hal_set_low_opt_led_bar_cmd();
   //开始采集数据，将在bsp_ADC.c中被用到
@@ -67,19 +75,21 @@ void IR_drv_adc_sample_ctrl(void)
 void lightbar_get_status(void)
 {
   uint16_t lightbar_current_ad_value = get_time2_sample_adc_value();
-  if((lightbar_current_ad_value - adc_current_base_value) >= MIN_DELTA_DETECTION
-     && (lightbar_current_ad_value >= MIN_THREASHOLD))
+  printf("%d\r\n", lightbar_current_ad_value);
+  //开发板AD的量程检测上限为3.3V，目前为高时，都是超量程，所以不做判断20210105
+  //if((lightbar_current_ad_value - adc_current_base_value) >= MIN_DELTA_DETECTION) && (lightbar_current_ad_value >= MIN_THREASHOLD))  
+  if(lightbar_current_ad_value > IR_OPEN_MIN)
   {
     light_bar_status = LIGHT_BAR_CTRL_OPEN; //突然升高，认为打开了
   }
-  else if((lightbar_current_ad_value >= MIN_THREASHOLD)
-          && (adc_current_base_value >= MIN_THREASHOLD))
+  //else if((lightbar_current_ad_value >= MIN_THREASHOLD) && (adc_current_base_value >= MIN_THREASHOLD))
+  else if(lightbar_current_ad_value  <= IR_CLOSE_MAX)
   {
-    light_bar_status = LIGHT_BAR_CTRL_ERROR;
+    light_bar_status = LIGHT_BAR_CTRL_CLOSE;
   }
   else
   {
-    light_bar_status = LIGHT_BAR_CTRL_CLOSE;
+    light_bar_status = LIGHT_BAR_CTRL_ERROR;
   }
 }
 
@@ -129,11 +139,13 @@ void check_open_close_status(void)
 {
    if(GPIO_ReadInputPin(OPEN_CLOSE_PORT, OPEN_CLOSE_PIN) == 0)
    {
-     printf_debug("close\r\n");
+     //printf_debug("close\r\n");
+     open_close_status = CLOSE;
    }
    else
    {
-     printf_debug("open\r\n");
+     //printf_debug("open\r\n");
+     open_close_status = OPEN;
    }
 }
 
@@ -164,6 +176,7 @@ void timer_10ms_task(void)
     
      ////////任务区执行区////////
      adc_current_base_value_calc(); 
+     IR_drv_adc_sample_ctrl();
      lightbar_get_status();
      light_bar_debound_sample();
      check_open_close_status();
@@ -181,8 +194,8 @@ void timer_100ms_task(void)
      task_mark_time_100ms = get_current_time();
      
      ////////任务区执行区////////
-     IR_drv_adc_sample_ctrl();
-     //
+     //发送状态，第一个参数为盖子状态，第二个为红外灯状态
+     //printf("%d,%d\r\n", open_close_status, light_bar_status);
      ////////任务区执行区////////
   }
 }
@@ -199,7 +212,7 @@ void timer_1s_task(void)
      ////////任务区执行区////////
      //uint16_t ad_value = get_adc_value();
      uint16_t ad_value = get_time2_sample_adc_value();
-     printf_debug("the value of %d",ad_value);
+     //printf_debug("the value of %d",ad_value);
      ////////任务区执行区////////
   }
 }
@@ -229,7 +242,7 @@ void time_task_poll(void)
 {
   handle_adc1_sample_poll();
   current_time = get_current_time();//更新当前时间
-  real_task_poll();
+  //real_task_poll();        //用于测试的PWM波
   timer_10ms_task();        //轮询调度
   timer_100ms_task();
   timer_1s_task();
